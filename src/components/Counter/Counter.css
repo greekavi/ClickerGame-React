@@ -1,0 +1,97 @@
+
+.App{
+   text-align: center;
+  min-width: 300px;
+max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Game h3{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+
+.Welcome{
+    background-color: #62055f;
+    color: white;
+    border-radius: 40px;
+    padding:7px;
+    min-width: 100px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#enterbutton{
+    padding: 4px;
+}
+
+.Welcome b{
+    color: #f688f7;
+    
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.TimerHeading{
+    font-size:20px;
+}
+.Game{
+    background-color: white;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+}
+
+.App button{
+    background-color: #f688f7;
+    color:#aa076b ;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+}
+@media only screen and (max-width:768px)
+{
+.Leader .modal-content2
+{
+top: 1000px;
+left: 50%;
+}
+}
+@media only screen and (min-width:768px)
+{
+    .Leader .modal-content2
+{
+    right:  -10%;
+    top: 50%;
+}
+}
+.Game button{
+    background-color: #f688f7;
+    border-radius: 40px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    
+    color:#aa076b ;
+    padding: 10px 20px;
+    border: none;
+}
+.Game button:hover{
+    background-color:white  ;
+    color:  #aa076b;
+    
+}
+.stop{
+    color: red;
+}
+.App button:hover{
+    background-color:white  ;
+    color:  #aa076b;
+    
+  
+}
+#MainButton{
+    padding: 20px;
+    font-size: 30px
+}

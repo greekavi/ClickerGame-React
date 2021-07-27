@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body, html{
+  background-Image:linear-gradient(to right,#aa076b,#62055f);
+  height: 200%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
