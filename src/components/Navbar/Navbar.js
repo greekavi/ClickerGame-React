@@ -22,7 +22,7 @@ function Navbar({onChildClick,childbutton,childLeader,childgame,childmount,child
     </div>
       
      {(!childmount)&& <Button id="leaderposition" onClick={Leaderboardswitch}>Leaderboard</Button>}<br/>
-     <Button id={childplay?"playbutton":"homebutton"} onClick={onChildClick}>{childbutton}</Button>
+     <Button id={childplay?"playbutton":"homebutton"} className="playhome" onClick={onChildClick}>{childbutton}</Button>
 {leader&&<div className="Leader2">
 <div className="modal">
 <div  className="overlay"></div><LeaderBoard leaderboardswitch={Leaderboardswitch} Leadercommon={childLeader} leadergame={childgame}/></div>
