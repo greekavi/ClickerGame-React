@@ -1,7 +1,5 @@
 
-#submit{
-    background-color:#f688f7;
-}
+
 #submit:hover{
     background-color: #aa076b;
     color: white;
@@ -25,9 +23,10 @@
     font-size: 15px;
     
 }
-#signin{
+#submit{
     padding: 2px;
     font-size: 15px;
+    background-color:#f688f7;
     
 }
 label{

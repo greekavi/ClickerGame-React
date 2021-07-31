@@ -223,18 +223,18 @@ function Form({formClick,closeForm,formgamecode,formgamestatus}){
           <div className="modal-content">
           <button id="close" onClick={closeForm}>X</button>
           <Typography color="primary" id="signintext" variant="h5">Dont have an account?!</Typography>
-           <Button id="submit" id="signin" onClick={opensignin}>Sign Up</Button>
+           <Button id="submit" onClick={opensignin}>Sign Up</Button>
           <form>
-            <Typography variant="h5" color="primary">Enter Your Details</Typography>
+            <Typography variant="h5"   color="primary">Enter Your Details</Typography>
            <br/>
-           <TextField label="Email" variant="outlined"  color= "primary" value={email} onChange={handleEmailChange}/><br/><br/>
+           <TextField label="Email" variant="outlined" id="EmailInput" color= "primary" value={email} onChange={handleEmailChange}/><br/><br/>
            
-          {(!signIn)&& <Button onClick={handleSignin}>Sign In</Button>}
+          {(!signIn)&& <Button id="signin" onClick={handleSignin}>Sign In</Button>}
           {confirmSignIn&&<div>
               <Typography color="primary" variant="h5">Cannot Find Your Account...<br/>Do you want to signup?</Typography>
               <Button onClick={confirmSignUp}>Yes</Button> <Button onClick={retrySignIn}>No</Button>
               </div>}
-          {signIn&&<div> <TextField label="User Name" variant="outlined"  color= "primary" value={userName} onChange={handleUsernameChange} /> <br/><br/>
+          {signIn&&<div> <TextField label="User Name" variant="outlined" data-testid="userNameInput"  color= "primary" value={userName} onChange={handleUsernameChange} /> <br/><br/>
            
            <Typography color="primary" variant="h5">Select Age</Typography><br/>
            <Select value={age} onChange={handleAgeChange}>{ageList}</Select><br/><br/>
@@ -247,7 +247,7 @@ function Form({formClick,closeForm,formgamecode,formgamestatus}){
            {enterOtp&&
            <div><br/>
            <Typography color="primary" variant="h5">Enter Otp</Typography><br/>
-           <TextField label="OTP" variant="outlined" color="primary" value={otp} onChange={handleOtpChange}/><br/>
+           <TextField label="OTP" variant="outlined" color="primary" data-testid="otpInput" value={otp} onChange={handleOtpChange}/><br/>
            <br/><Button onClick={handleOtp}>Submit Otp</Button>
            </div>}
            </form>
