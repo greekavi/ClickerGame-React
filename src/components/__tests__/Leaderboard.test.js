@@ -13,9 +13,9 @@ afterEach(() => {
   });
 
 it("Close button works",()=>{
-    
-    const wrapper=shallow(<button id="close" onClick={leaderboardswitch}>X</button>);
     const leaderboardswitch=jest.fn();
+    const wrapper=shallow(<button id="close" onClick={leaderboardswitch}>X</button>);
+    
     wrapper.find("#close").simulate("click");
     expect(leaderboardswitch.mock.calls.length).toEqual(1);
 

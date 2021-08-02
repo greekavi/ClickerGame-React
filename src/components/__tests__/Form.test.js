@@ -52,12 +52,10 @@ it("SignUp button works",()=>{
 
 })
 it("SignIn button works",()=>{
-
     const handleSignin=jest.fn();
-    const wrapper=mount(<Button id="signin" onClick={handleSignin}>Sign In</Button>);
+    const wrapper=shallow(<Button id="signin" onClick={handleSignin}>Sign In</Button>);
     wrapper.find('#signin').simulate('click');
     expect(handleSignin.mock.calls.length).toEqual(1);
-
 })
 
 

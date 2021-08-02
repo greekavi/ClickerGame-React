@@ -19,7 +19,7 @@ function Timer({TimerSeconds}){
     return(
          <div>
                 
-        {time&&<b className="Timer">Timer : {TimerSeconds}</b>}
+        {time&&<b data-testid="TimerTestId" className="Timer">Timer : {TimerSeconds}</b>}
         {timeOver&&  <b className="Timer stop">Time Up!!!</b>}
       </div>
     );

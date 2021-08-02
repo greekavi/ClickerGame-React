@@ -223,7 +223,7 @@ function Form({formClick,closeForm,formgamecode,formgamestatus}){
           <div className="modal-content">
           <button id="close" onClick={closeForm}>X</button>
           <Typography color="primary" id="signintext" variant="h5">Dont have an account?!</Typography>
-           <Button id="submit" onClick={opensignin}>Sign Up</Button>
+           <Button id="submit" data-testid="SignUpButton" onClick={opensignin}>Sign Up</Button>
           <form>
             <Typography variant="h5"   color="primary">Enter Your Details</Typography>
            <br/>
@@ -234,7 +234,7 @@ function Form({formClick,closeForm,formgamecode,formgamestatus}){
               <Typography color="primary" variant="h5">Cannot Find Your Account...<br/>Do you want to signup?</Typography>
               <Button onClick={confirmSignUp}>Yes</Button> <Button onClick={retrySignIn}>No</Button>
               </div>}
-          {signIn&&<div> <TextField label="User Name" variant="outlined" data-testid="userNameInput"  color= "primary" value={userName} onChange={handleUsernameChange} /> <br/><br/>
+          {signIn&&<div> <TextField label="User Name" id="userTestId" variant="outlined" data-testid="userNameInput"  color= "primary" value={userName} onChange={handleUsernameChange} /> <br/><br/>
            
            <Typography color="primary" variant="h5">Select Age</Typography><br/>
            <Select value={age} onChange={handleAgeChange}>{ageList}</Select><br/><br/>

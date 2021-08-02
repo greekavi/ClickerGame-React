@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches Snapshot 1`] = `
+<div>
+  <b
+    className="Timer"
+    data-testid="TimerTestId"
+  >
+    Timer : 
+    10
+  </b>
+</div>
+`;

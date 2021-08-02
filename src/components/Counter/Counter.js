@@ -79,10 +79,6 @@ useEffect(()=>{
 
    useEffect(() => { 
     if(!seconds) return;    
-      
-       
-        
-    console.log(username);
    const timer= setInterval(() => setSeconds(seconds - 1), 1000);
         return ()=>{clearInterval(timer);}
    },[seconds]);
