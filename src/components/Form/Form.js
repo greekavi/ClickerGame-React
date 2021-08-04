@@ -234,7 +234,7 @@ function Form({formClick,closeForm,formgamecode,formgamestatus}){
               <Typography color="primary" variant="h5">Cannot Find Your Account...<br/>Do you want to signup?</Typography>
               <Button onClick={confirmSignUp}>Yes</Button> <Button onClick={retrySignIn}>No</Button>
               </div>}
-          {signIn&&<div> <TextField label="User Name" id="userTestId" variant="outlined" data-testid="userNameInput"  color= "primary" value={userName} onChange={handleUsernameChange} /> <br/><br/>
+          {signIn&&<div> <TextField label="User Name" id="userTestId" variant="outlined" inputProps={{ "data-testid": "userNameInput" }} color= "primary" value={userName} onChange={handleUsernameChange} /> <br/><br/>
            
            <Typography color="primary" variant="h5">Select Age</Typography><br/>
            <Select value={age} onChange={handleAgeChange}>{ageList}</Select><br/><br/>
@@ -243,12 +243,12 @@ function Form({formClick,closeForm,formgamecode,formgamestatus}){
            <Typography color="primary" variant="h5">Select Gender</Typography><br/>
            <RadioGroup onChange={handleGenderChange}>{genderList}</RadioGroup>
            <br/><br/>
-           <Button id="submit" onClick={handleSubmitSignup}>Submit</Button></div>}
+           <Button id="submit" inputProps={{ "data-testid": "SubmitSignUp" }} onClick={handleSubmitSignup}>Submit</Button></div>}
            {enterOtp&&
            <div><br/>
            <Typography color="primary" variant="h5">Enter Otp</Typography><br/>
            <TextField label="OTP" variant="outlined" color="primary" data-testid="otpInput" value={otp} onChange={handleOtpChange}/><br/>
-           <br/><Button onClick={handleOtp}>Submit Otp</Button>
+           <br/><Button   onClick={handleOtp}>Submit Otp</Button>
            </div>}
            </form>
           </div>

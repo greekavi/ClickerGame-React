@@ -4,7 +4,6 @@ import {render,fireEvent,cleanup,screen,container} from '@testing-library/react'
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import "@testing-library/jest-dom/extend-expect";
 import {shallow,configure} from 'enzyme';
-import Clicker from './../Clicker/Clicker';
 import renderer from "react-test-renderer";
 
 configure({ adapter: new Adapter() })
@@ -29,3 +28,4 @@ it("Matches Snapshot",()=>{
   const tree=renderer.create(<Clicker TimerSeconds="10"/>).toJSON();
   expect(tree).toMatchSnapshot();
 })
+import Clicker from './../Clicker/Clicker';

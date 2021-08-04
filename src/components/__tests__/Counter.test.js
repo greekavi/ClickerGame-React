@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import {render,fireEvent,cleanup,screen,container} from '@testing-library/react';
+import {render,fireEvent,cleanup,screen,container,act} from '@testing-library/react';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import "@testing-library/jest-dom/extend-expect";
 import {shallow,configure,mount} from 'enzyme';
-import Reset from './../Reset/Reset';
-import Clicker from './../Clicker/Clicker';
-import Timer from './../Timer/Timer';
-import LeaderBoard from './../LeaderBoard/LeaderBoard';
-import Counter from './../Counter/Counter';
+
 
 configure({ adapter: new Adapter() })
 
@@ -40,3 +36,8 @@ it("renders Timer component correctly",()=>{
     expect(wrapper.find('.Timer')).toHaveLength(1);
 })
 
+import Reset from './../Reset/Reset';
+import Clicker from './../Clicker/Clicker';
+import Timer from './../Timer/Timer';
+import LeaderBoard from './../LeaderBoard/LeaderBoard';
+import Counter from './../Counter/Counter';

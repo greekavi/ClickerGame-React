@@ -5,8 +5,7 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import Button from '@material-ui/core/Button';
 import "@testing-library/jest-dom/extend-expect";
 import {shallow,configure,mount} from 'enzyme';
-import LeaderBoard from './../LeaderBoard/LeaderBoard';
-import Navbar from './../Navbar/Navbar';
+
 
 configure({ adapter: new Adapter() })
 
@@ -41,3 +40,6 @@ it("The LeaderBoard renders properly",()=>{
     expect(wrapper.find('.modal-content2')).toHaveLength(1);
 
 })
+
+import LeaderBoard from './../LeaderBoard/LeaderBoard';
+import Navbar from './../Navbar/Navbar';

@@ -2,7 +2,6 @@ import {render,fireEvent,cleanup,screen,container,act} from '@testing-library/re
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import "@testing-library/jest-dom/extend-expect";
 import {shallow,configure} from 'enzyme';
-import Ready from './../Ready/Ready';
 import renderer from "react-test-renderer";
 
 configure({ adapter: new Adapter() })
@@ -20,3 +19,4 @@ it("Timer should display number of seconds pending before starting the game",()=
       })
       expect(getByText('1')).toBeInTheDocument();
 })
+import Ready from './../Ready/Ready';
