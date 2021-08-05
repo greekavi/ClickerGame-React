@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Form from './../Form/Form';
 import {render,fireEvent,cleanup,screen,container} from '@testing-library/react';
 import Button from '@material-ui/core/Button';
 import Select from '@material-ui/core/Select';
@@ -9,8 +8,6 @@ import TextField from '@material-ui/core/TextField';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import Typography from '@material-ui/core/Typography';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import 'firebase/firestore';
-import firebase from 'firebase/app';
 import "@testing-library/jest-dom/extend-expect";
 
 import {shallow,configure,mount} from 'enzyme';
@@ -51,13 +48,14 @@ it("SignUp button works",()=>{
     expect(opensignin.mock.calls.length).toEqual(1);
 
 })
-it("SignIn button works",()=>{
 
+it("SignIn button works",()=>{
     const handleSignin=jest.fn();
-    const wrapper=mount(<Button id="signin" onClick={handleSignin}>Sign In</Button>);
+    const wrapper=shallow(<Button id="signin" onClick={handleSignin}>Sign In</Button>);
     wrapper.find('#signin').simulate('click');
     expect(handleSignin.mock.calls.length).toEqual(1);
-
 })
 
+
+import Form from './../Form/Form';
 

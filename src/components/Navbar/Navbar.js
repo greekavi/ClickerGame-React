@@ -18,7 +18,7 @@ function Navbar({onChildClick,childbutton,childLeader,childgame,childmount,child
 
         <div className="heading1">
       <p>Fastest Clicker First<br/>
-    {!childplay&& <b>Game Room:{childgame}</b>}</p>
+    {!childplay&& <b data-testid="GameRoomTestId">Game Room:{childgame}</b>}</p>
     </div>
       
      {(!childmount)&& <Button id="leaderposition" onClick={Leaderboardswitch}>Leaderboard</Button>}<br/>

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches Snapshot 1`] = `
+<div>
+  <h4
+    data-testid="resetGameId"
+  >
+    Number of Games played: 
+    10
+  </h4>
+  <button
+    id="button2"
+  >
+    Reset
+  </button>
+</div>
+`;

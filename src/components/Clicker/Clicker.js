@@ -4,7 +4,7 @@ import './Clicker.css';
 function Clicker({ClickerCount,ClickerTick}){  
     return(
 <div>
-<p>You Clicked <b>{ClickerCount}</b> times</p>
+<p data-testid="clickerCountId">You Clicked <b>{ClickerCount}</b> times</p>
           
                           
             <button id="button1"  onClick={ClickerTick}>

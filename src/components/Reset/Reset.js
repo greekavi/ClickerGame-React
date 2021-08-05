@@ -4,7 +4,7 @@ import './Reset.css'
 function Reset({ResetGame,ResetEnable}){  
     return(
 <div>
-<h4>Number of Games played: {ResetGame}</h4>
+<h4 data-testid="resetGameId">Number of Games played: {ResetGame}</h4>
             <button id="button2" onClick={ResetEnable}>Reset</button>
             
       </div>
